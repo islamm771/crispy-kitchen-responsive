@@ -1,0 +1,88 @@
+header{
+    background-image: url(../images/header/rod-long-I79Pgmhmy5M-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+}
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--dark-color), transparent 100%);
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+header div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+}
+header div h1{
+    font-size:var(--h1-font-size);
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight:bold;
+}
+header div p{
+    font-size: 16px;
+    font-weight:bold;
+}
+.leave{
+    padding: 7rem 0;
+}
+.leave h2{
+    font-size:var(--h2-font-size);
+    color: var(--dark-color);
+    font-weight: bold;
+}
+.leave form label{
+    font-weight: 600;
+}
+.leave form input, .leave form textarea{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+.leave form button{
+    padding: 10px 35px !important;
+    text-transform: uppercase;
+}
+
+.leave form .row div{
+    margin-bottom: 15px;
+}
+.leave .row-schedule h4{
+    font-size:1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.leave .schedule{
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+.leave h3{
+    font-weight: 600;
+    color: black;
+}
+@media (max-width: 767.98px) { 
+    header div h1{
+        font-size: 45px;
+    }
+    .leave h2{
+        font-size: 35px;
+    }
+    .schedule{
+        padding-left: 15px !important;
+    }
+}
+footer ul li a i{
+    font-size: 25px;
+    color: var(--p-color);
+}
+footer li:hover i{
+    color: white;
+}
