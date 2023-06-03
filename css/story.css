@@ -1,0 +1,105 @@
+:root{
+    --white-color: #FFFFFF;
+    --primary-color: #f44749;
+    --secondary-color: #f3af24;
+    --section-bg-color: #F9F9F9;
+    --dark-color: #000000;
+    --title-color: #565758;
+    --news-title-color: #292828;
+    --p-color: #717275;
+    --border-color: #eaeaea;
+    --border-radius-default: .25rem;
+    --body-font-family: 'Montserrat', sans-serif;
+    --h1-font-size: 76px;
+    --h2-font-size: 56px;
+    --h3-font-size: 42px;
+    --h4-font-size: 28px;
+    --h5-font-size: 26px;
+    --h6-font-size: 22px;
+    --p-font-size: 18px;
+    --menu-font-size: 18px;
+    --category-font-size: 14px;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+header{
+    background-image: url(../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+}
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--dark-color), transparent 100%);
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+header div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+}
+header div h1{
+    font-size:var(--h1-font-size);
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight:bold;
+}
+header div p{
+    font-size: 16px;
+    font-weight:bold;
+}
+.landing{
+    padding: 7rem 0;
+}
+.landing .row p{
+    font-size:30px;
+    font-weight: var(--font-weight-semibold);
+}
+.landing .row div a:first-of-type{
+    background-color: var(--news-title-color);
+    color: white;
+    padding: 10px 30px;
+}
+.landing .row div a:last-of-type{
+    padding: 10px 20px;
+}
+
+.landing .row div:last-child{
+    font-size: 18px;
+}
+
+.teams{
+    background-color: var(--section-bg-color);
+    padding: 7rem 0;
+}
+.teams .row h2{
+    font-size: var(--h2-font-size);
+    font-weight:var(--font-weight-bold);
+    margin-bottom: 4rem;
+    color:var(--dark-color);
+}
+.contact{
+    padding: 7rem 0;
+}
+
+.contact .row h4{
+    font-weight: var(--font-weight-semibold);
+}
+@media (max-width: 767.98px) { 
+    header div h1{
+        font-size: 45px;
+    }
+    .teams .row h2{
+        font-size: 40px;
+    }
+}
