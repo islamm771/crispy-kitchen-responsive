@@ -8,10 +8,16 @@ setInterval(nextImage , 3000)
 
 let datenow = new Date();
 let timenow;
-if (datenow.getHours() > 10 && datenow.getHours() < 20) {
+if(state != null){
+  if (datenow.getHours() > 10 && datenow.getHours() < 20) {
+    state.classList.remove("bg-danger");
+    state.classList.add("bg-success");
     state.innerHTML += "Open";
-} else {
+  } else {
+    state.classList.remove("bg-success");
+    state.classList.add("bg-danger");
     state.innerHTML += "Close";
+  }
 }
 
 
