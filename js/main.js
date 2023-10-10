@@ -3,7 +3,7 @@ let img = document.querySelector(".slide-img");
 let index = 0;
 let state = document.querySelector(".state");
 
-setInterval(nextImage , 3000)
+setInterval(nextImage , 5000)
 
 
 let datenow = new Date();
